@@ -7,6 +7,7 @@ local function get_weather(location)
   local url = BASE_URL
   url = url..'?q='..location
   url = url..'&units=metric'
+  url = url..'&APPID='1111111111'
 
   local b, c, h = http.request(url)
   if c ~= 200 then return nil end
